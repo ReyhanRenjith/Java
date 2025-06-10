@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.revaniexchange.controller.ProductDetailController">
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+    <Label fx:id="nameLabel" text="Product Name">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <ImageView fx:id="productImageView" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="priceLabel" text="\$99.99" textFill="DARKGREEN">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+    </Label>
+    <Label fx:id="descriptionLabel" maxWidth="500.0" text="Product description goes here..." wrapText="true">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+    <HBox alignment="CENTER" spacing="20.0">
+        <Button fx:id="buyButton" onAction="#onBuyProductClick" style="-fx-font-size: 14px; -fx-background-color: #28a745; -fx-text-fill: white;" text="Buy Product" />
+        <Button onAction="#onBackToDashboardClick" text="Back to Dashboard" />
+    </HBox>
+</VBox>

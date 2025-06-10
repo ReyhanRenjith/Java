@@ -72,7 +72,7 @@
                         <!-- Default configuration for running with: mvn javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.javafxstore/com.example.javafxstore.Main</mainClass>
+                            <mainClass>com.java.revaniexchange/com.java.revaniexchange.Main</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

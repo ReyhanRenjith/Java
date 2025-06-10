@@ -1,7 +1,7 @@
 package com.java.revaniexchange.repository;
 
-import com.example.javafxstore.model.Product;
-import com.example.javafxstore.model.User;
+import com.java.revaniexchange.model.Product;
+import com.java.revaniexchange.model.User;
 
 import java.sql.*;
 import java.util.ArrayList;

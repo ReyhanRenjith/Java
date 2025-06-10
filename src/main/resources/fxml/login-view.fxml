@@ -23,5 +23,6 @@
     <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
     <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
     <Button onAction="#onLoginButtonClick" text="Sign in" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+    <Button onAction="#onSignUpButtonClick" text="Sign up" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
     <Label fx:id="errorLabel" style="-fx-text-fill: red;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
 </GridPane>

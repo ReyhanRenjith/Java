@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.java.revaniexchange.controller.SignUpController" prefWidth="400" prefHeight="350">
+    <children>
+        <Label layoutX="150" layoutY="30" text="Sign Up" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+        <Label layoutX="60" layoutY="90" text="Username:" />
+        <TextField fx:id="usernameField" layoutX="140" layoutY="85" prefWidth="200" />
+        <Label layoutX="60" layoutY="140" text="Password:" />
+        <PasswordField fx:id="passwordField" layoutX="140" layoutY="135" prefWidth="200" />
+        <Button text="Register" layoutX="140" layoutY="200" prefWidth="200" onAction="#handleRegister" />
+        <Button text="Login" layoutX="140" layoutY="290" prefWidth="200" onAction="#handleLoginRedirect" />
+        <Label fx:id="messageLabel" layoutX="60" layoutY="250" prefWidth="280" style="-fx-text-fill: red;" />
+    </children>
+</AnchorPane>

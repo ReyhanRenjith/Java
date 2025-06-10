@@ -104,6 +104,19 @@ public class DatabaseManager {
         return orderedProducts;
     }
 
+    public boolean registerUser(String username, String password) {
+        String sql = "INSERT INTO users(username, password) VALUES (?, ?)";
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, username);
+            pstmt.setString(2, password);
+            pstmt.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            System.err.println("Error registering user: " + e.getMessage());
+            return false;
+        }
+    }
+    
     public void closeConnection() {
         try {
             if (conn != null && !conn.isClosed()) {

@@ -18,12 +18,6 @@ public class LoginController {
     @FXML private PasswordField passwordField;
     @FXML private Label errorLabel;
 
-    public void initialize() {
-        // Pre-fill for convenience
-        usernameField.setText("customer");
-        passwordField.setText("password123");
-    }
-
     @FXML
     void onLoginButtonClick(ActionEvent event) throws IOException {
         String username = usernameField.getText();
@@ -46,5 +40,11 @@ public class LoginController {
         } else {
             errorLabel.setText("Invalid username or password.");
         }
+    }
+
+    @FXML
+    void onSignUpButtonClick(ActionEvent event) throws IOException {
+        Main main = new Main();
+        main.changeScene("signup-view.fxml", "Sign Up");
     }
 }
